@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #00171f;
+  --blue: #003459;
+  --light-blue: #007ea7;
+}
+
+main {
+  width: 100%;
+  height: 100svh;
+  background: repeating-linear-gradient(
+    45deg,
+    var(--light-blue) 10px,
+    var(--blue) 10px,
+    var(--light-blue) 20px
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 1em;
+  border-radius: 1em;
+  width: 90%;
+  max-width: 600px;
+  color: var(--black);
+}
+
+form h2 {
+  font-size: 1.5em;
+  font-weight: 800;
+  margin-bottom: 0.4em;
+}
+form input,
+form textarea {
+  margin-bottom: 0.4em;
+  padding: 0.3em 0.6em;
+  border: 1px solid var(--blue);
+  border-radius: 0.5em;
+  font-size: 1em;
+  outline: none;
+}
+form textarea {
+  resize: none;
+}
+form input:hover,
+form textarea:hover {
+  outline: 1px solid var(--black);
+}
+
+form button {
+  width: fit-content;
+  padding: 0.3em 0.5em;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+  outline: none;
+  border: 2px solid var(--blue);
+  background-color: var(--light-blue);
+  color: var(--blue);
+  font-weight: 600;
+  margin: 0.2em auto 0;
+}
+
+form button:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
