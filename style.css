@@ -19,9 +19,9 @@ main {
   height: 100svh;
   background: repeating-linear-gradient(
     45deg,
-    var(--light-blue) 10px,
-    var(--blue) 10px,
-    var(--light-blue) 20px
+    var(--light-blue) 5px,
+    var(--blue) 5px,
+    var(--light-blue) 10px
   );
   display: flex;
   align-items: center;
@@ -43,6 +43,7 @@ form h2 {
   font-size: 1.5em;
   font-weight: 800;
   margin-bottom: 0.4em;
+  text-align: center;
 }
 form input,
 form textarea {
